@@ -7,7 +7,7 @@ import sys
 import cv2
 
 # Setup Communication path for arduino (In place of 'COM5' put the port to which your arduino is connected)
-arduino = serial.Serial('COM26', 9600)
+#arduino = serial.Serial('COM26', 9600)
 time.sleep(2)
 print("Connected to arduino...")
 # importing the Haarcascade for face detection

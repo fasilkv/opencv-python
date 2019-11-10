@@ -25,11 +25,11 @@ while (cap.isOpened()):
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
     # Generating mask to detect red color
-    lower_red = np.array([0,169 , 0])
+    lower_red = np.array([132, 0, 0])
     upper_red = np.array([179, 255, 255])
     mask1 = cv2.inRange(hsv, lower_red, upper_red)
 
-    lower_red = np.array([120, 63, 50])
+    lower_red = np.array([120, 0, 0])
     upper_red = np.array([179, 255, 255])
     mask2 = cv2.inRange(hsv, lower_red, upper_red)
 
